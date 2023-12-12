@@ -50,7 +50,7 @@ model Address {
   city      String?
   createdAt DateTime   @default(now())
   customers Customer[]
-  id        String     @id @default(cuid())
+  id        String     @id @default(uuid())
   state     String?
   updatedAt DateTime   @updatedAt
   zip       Int?
